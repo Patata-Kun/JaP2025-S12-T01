@@ -26,3 +26,18 @@ main {
 .offcanvas-top{
     height: fit-content;
 }
+
+.offcanvas-body {
+    overflow: visible !important;
+}
+
+.offcanvas {
+    overflow: visible !important;
+}
+
+#lista {
+  li {
+    border: 2px solid #757575;
+    border-radius: 0.5rem;
+  }
+}

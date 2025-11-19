@@ -14,12 +14,39 @@
 
 <body class="bg-dark">
   <main>
+
+    <div class="offcanvas offcanvas-top bg-dark" tabindex="-1" id="offcanvas-movie" role="dialog">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-light" id="offcanvas-movie-title"> Película </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"> </button>
+      </div>
+
+      <div class="offcanvas-body">
+        <p class="text-light" id="offcanvas-movie-description"> Descripción </p>
+
+        <hr class="text-light">
+        
+        <p class="text-light" id="offcanvas-movie-genres"> Géneros </p>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle mb-2" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-boundary="viewport"> More </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li> <span class="dropdown-item-text" id="dropdown-year"> Año </span> </li>
+            <li> <span class="dropdown-item-text" id="dropdown-runtime"> Duración </span> </li>
+            <li> <span class="dropdown-item-text" id="dropdown-budget"> Presupuesto </span> </li>
+            <li> <span class="dropdown-item-text" id="dropdown-revenue"> Recaudación </span> </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
     <div class="text-center container">
       <div class="row py-lg-3">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light"><img src="img/japflix.png" alt=""></h1>
+          <h1 class="fw-light mt-5 mb-5"><img src="img/japflix.png" alt=""></h1>
           <input type="search" class="form-control" name="buscar" id="inputBuscar" placeholder="Ej.: The Lion King">
-          <button class="btn btn-primary m-2" id="btnBuscar">Buscar</button>
+          <button class="btn btn-primary m-2 mt-5" id="btnBuscar"> Search </button>
         </div>
       </div>
     </div>
@@ -42,6 +69,7 @@
   </footer>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"> </script>
 
 </body>
 
