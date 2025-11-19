@@ -15,7 +15,7 @@
 <body class="bg-dark">
   <main>
 
-    <div class="offcanvas offcanvas-top bg-dark" tabindex="-1" id="offcanvas-movie" role="dialog">
+    <div class="offcanvas offcanvas-top bg-dark" tabindex="-1" id="offcanvas-movie">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title text-light" id="offcanvas-movie-title"> Película </h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"> </button>
@@ -26,17 +26,18 @@
 
         <hr class="text-light">
         
-        <p class="text-light" id="offcanvas-movie-genres"> Géneros </p>
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="text-light mb-0" id="offcanvas-movie-genres"> Géneros </p>
 
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle mb-2" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-boundary="viewport"> More </button>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li> <span class="dropdown-item-text" id="dropdown-year"> Año </span> </li>
-            <li> <span class="dropdown-item-text" id="dropdown-runtime"> Duración </span> </li>
-            <li> <span class="dropdown-item-text" id="dropdown-budget"> Presupuesto </span> </li>
-            <li> <span class="dropdown-item-text" id="dropdown-revenue"> Recaudación </span> </li>
-          </ul>
-
+          <div class="dropdown dropstart">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-boundary="viewport"> More </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li> <span class="dropdown-item-text" id="dropdown-year"> Año </span> </li>
+              <li> <span class="dropdown-item-text" id="dropdown-runtime"> Duración </span> </li>
+              <li> <span class="dropdown-item-text" id="dropdown-budget"> Presupuesto </span> </li>
+              <li> <span class="dropdown-item-text" id="dropdown-revenue"> Recaudación </span> </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
